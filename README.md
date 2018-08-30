@@ -14,7 +14,7 @@ This is a basic example which shows you how to solve a common problem:
 x <- ShinyTester::ShinyHierarchy(system.file('shinyexample',package='shinycovr'))
 ```
 
-![](inst/readme_image.png)
+![](tools/figures/readme_image.png)
 
 ``` r
 x$x$edges
@@ -25,7 +25,7 @@ x$x$edges
 #> 4  2    1
 x$x$nodes
 #>        Thingie       group id        label    level
-#> 1 datasetInput    reactive  1 datasetInput 1.587017
+#> 1 datasetInput    reactive  1 datasetInput 2.031717
 #> 2         view renderTable  2         view 3.000000
 #> 3      summary renderPrint  3      summary 3.000000
 #> 5      dataset     uiInput  4      dataset 1.000000
@@ -50,7 +50,7 @@ x2 <- igraph::graph_from_data_frame(x$x$edges,directed = TRUE)
 plot(x2)
 ```
 
-![](README-unnamed-chunk-4-1.png)
+![](tools/figuresunnamed-chunk-4-1.png)
 
 ``` r
 

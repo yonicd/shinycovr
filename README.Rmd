@@ -11,7 +11,7 @@ always_allow_html: yes
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "tools/figures"
 )
 ```
 
@@ -27,7 +27,7 @@ This is a basic example which shows you how to solve a common problem:
 x <- ShinyTester::ShinyHierarchy(system.file('shinyexample',package='shinycovr'))
 ```
 
-![](inst/readme_image.png)
+![](tools/figures/readme_image.png)
 
 ```{r}
 x$x$edges
