@@ -1,0 +1,12 @@
+Package: shinycovr
+Title: Shiny Application Code Coverage
+Version: 0.0.0.9000
+Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Description: covr for shinyapps.
+Depends: R (>= 3.2.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: igraph,stats
+Suggests: ShinyTester
+RoxygenNote: 6.0.1
