@@ -47,7 +47,7 @@ Using an igraph object
 ```{r}
 x2 <- igraph::graph_from_data_frame(x$x$edges,directed = TRUE)
 
-x2
+plot(x2)
 
 shinycovr::shiny_path(x2)
 ```

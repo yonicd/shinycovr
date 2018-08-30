@@ -25,7 +25,7 @@ x$x$edges
 #> 4  2    1
 x$x$nodes
 #>        Thingie       group id        label    level
-#> 1 datasetInput    reactive  1 datasetInput 2.137563
+#> 1 datasetInput    reactive  1 datasetInput 1.587017
 #> 2         view renderTable  2         view 3.000000
 #> 3      summary renderPrint  3      summary 3.000000
 #> 5      dataset     uiInput  4      dataset 1.000000
@@ -47,11 +47,12 @@ Using an igraph object
 ``` r
 x2 <- igraph::graph_from_data_frame(x$x$edges,directed = TRUE)
 
-x2
-#> IGRAPH 1413e96 DN-- 5 4 -- 
-#> + attr: name (v/c)
-#> + edges from 1413e96 (vertex names):
-#> [1] 1->4 2->5 3->1 2->1
+plot(x2)
+```
+
+![](README-unnamed-chunk-4-1.png)
+
+``` r
 
 shinycovr::shiny_path(x2)
 #> [1] "2=>5"    "2=>1=>4" "3=>1=>4"
